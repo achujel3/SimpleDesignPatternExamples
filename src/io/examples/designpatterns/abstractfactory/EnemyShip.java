@@ -4,8 +4,8 @@ public abstract class EnemyShip {
 
     private String name;
 
-    ESWeapon weapon;
-    ESEngine engine;
+    protected ESWeapon weapon;
+    protected ESEngine engine;
 
     public String getName() {
         return name;
@@ -15,7 +15,7 @@ public abstract class EnemyShip {
         this.name = name;
     }
 
-    abstract void makeShip();
+    protected abstract void makeShip();
 
     public void followHeroShip() {
         System.out.println(getName() + " is following the hero at " + engine);

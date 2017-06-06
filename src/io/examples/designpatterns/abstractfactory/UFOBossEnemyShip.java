@@ -9,7 +9,7 @@ public class UFOBossEnemyShip extends EnemyShip {
     }
 
     @Override
-    void makeShip() {
+    protected void makeShip() {
         System.out.println("Making enemy ship " + getName());
         weapon = shipFactory.addESGun();
         engine = shipFactory.addESEngine();
