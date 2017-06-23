@@ -23,6 +23,6 @@ public class Mozzarella extends ToppingDecorator {
     @Override
     public double getCost() {
         System.out.println("Cost of Moz: " + .50);
-        return tempPizza.getCost() + .50;
+        return tempPizza.getCost() + .50; 
     }
 }
